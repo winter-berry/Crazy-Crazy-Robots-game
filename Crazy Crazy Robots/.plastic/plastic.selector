@@ -1,4 +1,0 @@
-repository "Crazy Crazy Robots V1@SamanthaSim@cloud"
-  path "/"
-    br "/main"
-    co "/main"
