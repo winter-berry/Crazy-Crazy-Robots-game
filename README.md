@@ -6,8 +6,13 @@ Crazy Crazy Robots is a 2D arcade game.
 > Learn the basics of game development.
 
 <b> Aims: </b> <br>
-> Create a polished, ready-to-play game. <br>
-> Focus on audio and visual feedback for satisfying gameplay.
+> Game is polished and ready-to-play. <br>
+> Audio and visual feedback is satisfying
+
+<b> Objectives: </b> <br>
+> Clean code and component structure <br>
+> Focus on script reusability and adaptability <br>
+> > Few dependencies, loosely coupled as much as possible
 
 ## Preview
 
