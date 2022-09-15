@@ -1,5 +1,5 @@
 # Crazy Crazy Robots
-Crazy Crazy Robots is a 2D arcade game revolved around killing robots.
+Crazy Crazy Robots is a 2D arcade game.
 
 ## Learning Journey
 <b> Goal: </b> <br>
