@@ -1,3 +1,3 @@
-# Crazy Crazy-Robots
+# Crazy Crazy Robots
 
 ## Preview
