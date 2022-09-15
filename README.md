@@ -1,5 +1,5 @@
 # Crazy Crazy Robots
-This is the first (ever) game that I developed.
+Crazy Crazy Robots is a 2D arcade game revolved around killing robots.
 
 ## Learning Journey
 <b> Goal: </b> <br>
