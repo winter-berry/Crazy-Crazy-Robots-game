@@ -7,12 +7,12 @@ Crazy Crazy Robots is a 2D arcade game.
 
 <b> Aims: </b> <br>
 > Game is polished and ready-to-play. <br>
-> Audio and visual feedback is satisfying
+> Audio and visual feedback is satisfying.
 
 <b> Objectives: </b> <br>
-> Clean code and component structure <br>
-> Focus on script reusability and adaptability <br>
-> > Few dependencies, loosely coupled as much as possible
+> Clean code and component structure. <br>
+> Focus on script reusability and adaptability. <br>
+> > Few dependencies, loosely coupled as much as possible.
 
 ## Preview
 
