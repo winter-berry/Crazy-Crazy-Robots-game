@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Projectile_GLine: MonoBehaviour
+public class Projectile_Line: MonoBehaviour
 {
     public enum Entity
     {
@@ -9,6 +9,8 @@ public class Projectile_GLine: MonoBehaviour
     };
 
     /* Customizable */
+    [SerializeField]
+    private PoolObjectType projType;
     [SerializeField]
     private Entity[] targets;
     [SerializeField]
@@ -35,7 +37,7 @@ public class Projectile_GLine: MonoBehaviour
             if (gameObject.activeInHierarchy)
             {
                 timeSinceSpawn = 0f;
-                PoolManager.SharedInstance.ReturnPooledObject(gameObject, PoolObjectType.Proj_GLine);
+                PoolManager.SharedInstance.ReturnPooledObject(gameObject, projType);
             }
         }
     }
@@ -47,7 +49,7 @@ public class Projectile_GLine: MonoBehaviour
 
     private void ReturnProjectile()
     {
-        PoolManager.SharedInstance.ReturnPooledObject(gameObject, PoolObjectType.Proj_GLine);
+        PoolManager.SharedInstance.ReturnPooledObject(gameObject, projType);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -57,12 +59,14 @@ public class Projectile_GLine: MonoBehaviour
 
         foreach (var target in targets)
         {
+            /* Target Player */
             if (target.Equals(Entity.Player) && player != null)
             {
                 player.TakeDamage(projectileDamage);
                 ReturnProjectile();
             }
 
+            /* Target Enemy */
             if (target.Equals(Entity.Enemy) && enemy != null)
             {
                 enemy.TakeDamage(projectileDamage);

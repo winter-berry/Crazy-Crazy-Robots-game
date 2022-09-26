@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
      [SerializeField]
     private char actionKey1 = 'b';
     [SerializeField]
+    private PoolObjectType projType;
+    [SerializeField]
     private Transform firePoint;
 
     /* Variables */
@@ -43,7 +45,7 @@ public class PlayerController : MonoBehaviour
         /* Shoot */
         if (Input.GetKeyDown((KeyCode)actionKey1))
         {
-            GameObject proj_gline = PoolManager.SharedInstance.GetPooledObject(PoolObjectType.Proj_GLine);
+            GameObject proj_gline = PoolManager.SharedInstance.GetPooledObject(projType);
             proj_gline.transform.SetPositionAndRotation(firePoint.transform.position, firePoint.transform.rotation);
             proj_gline.SetActive(true);
             anim.SetTrigger("Shoot");

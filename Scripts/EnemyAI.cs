@@ -13,6 +13,8 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]
     private float stopDist = 0.6f;
     [SerializeField]
+    private PoolObjectType projType;
+    [SerializeField]
     private Transform firePoint;
 
     /* Variables */
@@ -62,7 +64,7 @@ public class EnemyAI : MonoBehaviour
         if (attackDelay >= attackSpeed)
         {
 
-            projectile = PoolManager.SharedInstance.GetPooledObject(PoolObjectType.Proj_GLine);
+            projectile = PoolManager.SharedInstance.GetPooledObject(projType);
             projectile.transform.SetPositionAndRotation(firePoint.transform.position, firePoint.transform.rotation);
             projectile.SetActive(true);
             anim.SetTrigger("Shoot");          
