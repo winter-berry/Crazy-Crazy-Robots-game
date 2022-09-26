@@ -1,10 +1,13 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public enum PoolObjectType
 {
-    Coin
+    Coin,
+    Proj_GLine,
+    Proj_BLine,
+    Proj_GCircle,
+    Proj_BCircle
 }
 
 [System.Serializable]

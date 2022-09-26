@@ -4,7 +4,7 @@ public class Door : MonoBehaviour
 {
     /* Customizable */
     [SerializeField]
-    protected bool readyToOpen = false;
+    public bool readyToOpen = false;
     [SerializeField]
     protected GameObject[] objectsToDetect;
     [SerializeField]
@@ -22,18 +22,23 @@ public class Door : MonoBehaviour
 
     protected virtual void Update()
     {
-        SetDoorStatus();
+        CheckDoorStatus();
     }
 
-    protected void SetDoorStatus()
+    public void SetDoorStatus(bool status)
+    {
+        readyToOpen = status;
+    }
+
+    protected void CheckDoorStatus()
     {
         if (readyToOpen)
         {
-            anim.SetBool("DoorActive", true);
+            anim.SetBool("IsActive", true);
             DoorBehavior();
         }
 
-        else anim.SetBool("DoorActive", false);
+        else anim.SetBool("IsActive", false);
     }
 
     protected bool Detection()
@@ -42,7 +47,7 @@ public class Door : MonoBehaviour
 
         foreach (GameObject obj in objectsToDetect)
         {
-            /* Checks if a delcared object is in range */
+            /* Object in range */
             Vector3 objPos = GameObject.Find(obj.name).transform.position;
             inRange = (objPos - this.transform.position).sqrMagnitude < detectionRange * detectionRange;
         }
@@ -53,18 +58,18 @@ public class Door : MonoBehaviour
     /* Override */
     protected virtual void DetectedBehavior()
     {
-        anim.SetBool("DoorOpen", true);
+        anim.SetBool("IsOpen", true);
 
-        /* Disable collider so that object can walk through*/
+        /* Object can go through */
         boxCollider.enabled = false;
     }
 
     /* Override */
     protected virtual void NotDetectedBehavior()
     {
-        anim.SetBool("DoorOpen", false);
+        anim.SetBool("IsOpen", false);
 
-        /* Disable collider so that object can walk through*/
+        /* Object cannot go through */
         boxCollider.enabled = true;
     }
 

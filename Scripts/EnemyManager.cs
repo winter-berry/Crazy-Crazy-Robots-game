@@ -1,6 +1,7 @@
+using System.Collections;
 using UnityEngine;
 
-public class PlayerManager : MonoBehaviour
+public class EnemyManager : MonoBehaviour
 {
     /* Customizable */
     [SerializeField]
@@ -10,12 +11,10 @@ public class PlayerManager : MonoBehaviour
 
     /* Variables */
     private float currentHealth;
-    [SerializeField]
-    private int currentCoins = 0;
 
     private void Start()
     {
-        SetPlayerHealth();
+        SetEnemyHealth();
     }
 
     private void Update()
@@ -23,7 +22,7 @@ public class PlayerManager : MonoBehaviour
         healthBar.SetActive(currentHealth, maxHealth);
     }
 
-    private void SetPlayerHealth()
+    private void SetEnemyHealth()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
@@ -33,15 +32,5 @@ public class PlayerManager : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
-    }
-
-    public void AddCoins(int coinValue)
-    {
-        currentCoins += coinValue;
-    }
-
-    public int GetCoins()
-    {
-        return currentCoins;
     }
 }
