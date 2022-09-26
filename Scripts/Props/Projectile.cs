@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Projectile_Line: MonoBehaviour
+public class Projectile: MonoBehaviour
 {
     public enum Entity
     {

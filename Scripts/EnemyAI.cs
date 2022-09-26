@@ -7,7 +7,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]
     private GameObject target;
     [SerializeField]
-    private float speed = 1f;
+    private float moveSpeed = 50f;
     [SerializeField]
     private float attackSpeed = 1.5f;
     [SerializeField]
@@ -41,7 +41,7 @@ public class EnemyAI : MonoBehaviour
     private void EnemyMove()
     {
         directionToTarget = (target.transform.position - transform.position).normalized;
-        rb.velocity = new Vector2(directionToTarget.x * speed, directionToTarget.y * speed);
+        rb.velocity = moveSpeed * Time.fixedDeltaTime * new Vector3(directionToTarget.x, directionToTarget.y, 0);
         anim.SetBool("IsRunning", true);
     }
 
@@ -63,7 +63,6 @@ public class EnemyAI : MonoBehaviour
 
         if (attackDelay >= attackSpeed)
         {
-
             projectile = PoolManager.SharedInstance.GetPooledObject(projType);
             projectile.transform.SetPositionAndRotation(firePoint.transform.position, firePoint.transform.rotation);
             projectile.SetActive(true);
