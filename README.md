@@ -1,5 +1,5 @@
 # Crazy Crazy Robots
-First game I made. Hobby project.
+My very first game. Hobby project.
 
 ## Learning Journey
 <b> Goal: </b> <br>
