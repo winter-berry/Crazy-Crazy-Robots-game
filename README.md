@@ -1,6 +1,5 @@
 # Crazy Crazy Robots
-Crazy Crazy Robots is a 2D arcade shooter game. Kill robots before time runs out!<br><br>
-This is the first game that I've made... <b>EVER!</b>
+First game I've made. Hobby project.
 
 ## Learning Journey
 <b> Goal: </b> <br>
