@@ -1,10 +1,6 @@
 # Crazy Crazy Robots
 This is one of my hobby projects.
 
-<p float="left">
-  <img src="https://github.com/winter-berry/Crazy-Crazy-Robots-2Dgame/blob/main/Images/EnemyAI.gif" width="49%" height="49%">
-</p>
-
 ## Learning Journey
 <b> Goal: </b> <br>
 > Learn the basics of game development.
@@ -26,6 +22,10 @@ This is one of my hobby projects.
 <li>Object pooling system revamped to accomodate multiple objects (and efficient adding of new objects)</li>
 <li>Enemy artificial intelligence improved (raycast!)</li>
 <li>Some prop scripts now use inheritence instead of duplicated code.</li>
+
+<br><p float="left">
+  <img src="https://github.com/winter-berry/Crazy-Crazy-Robots-2Dgame/blob/main/Images/EnemyAI.gif" width="49%" height="49%">
+</p>
 
 ## Notes
 This is a non-commercial project.
