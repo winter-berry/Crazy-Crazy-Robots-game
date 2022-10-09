@@ -1,5 +1,9 @@
 # Crazy Crazy Robots
-My very first game. Hobby project.
+This is one of my hobby projects.
+
+<p float="left">
+  <img src="https://github.com/winter-berry/Crazy-Crazy-Robots-2Dgame/blob/main/Images/EnemyAI.gif" width="49%" height="49%">
+</p>
 
 ## Learning Journey
 <b> Goal: </b> <br>
