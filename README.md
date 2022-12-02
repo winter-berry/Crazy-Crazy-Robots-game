@@ -1,5 +1,5 @@
 # Crazy Crazy Robots
-This is one of my hobby projects.
+HOBBY PROJECT
 
 ## Learning Journey
 <b> Goal: </b> <br>
