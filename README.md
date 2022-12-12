@@ -30,7 +30,7 @@ HOBBY PROJECT
 ## Future Implementations
 <li>Switching to NavMesh pathing because I just learned about it :-)</li>
 <li>Timer, leaderboard, UI, menu </li>
-<li>More sounds and animations for better user feedback</li>
+<li>More sounds and animations, better feedback</li>
 <li>Possibly a storyline</li>
 
 ## Notes
