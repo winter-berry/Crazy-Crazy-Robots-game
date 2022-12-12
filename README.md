@@ -27,5 +27,10 @@ HOBBY PROJECT
   <img src="https://github.com/winter-berry/Crazy-Crazy-Robots-2Dgame/blob/main/Images/EnemyAI.gif" width="49%" height="49%">
 </p>
 
+## Future Implementations
+<li>Switching to NavMesh pathing because I just learned about it :-)</li>
+<li>Timer, leaderboard, UI, menu </li>
+<li>More sounds and animations for better user feedback</li>
+
 ## Notes
 This is a non-commercial project.
