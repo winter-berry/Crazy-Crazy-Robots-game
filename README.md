@@ -28,9 +28,11 @@ HOBBY PROJECT
 </p>
 
 ## Future Implementations
-<li>Switching to NavMesh pathing because I just learned about it :-)</li>
-<li>Timer, leaderboard, UI, menu </li>
-<li>More sounds and animations, better feedback</li>
+<li>Technical - Switching to NavMesh pathing because I just learned about it :-)</li>
+<li>Game mechanics - Countdown timer, score counter, leaderboard</li>
+<li>UI - HUD, Menu, pause menu</li>
+<li>Polishing - More sounds and animations, better feedback</li>
+<li>To learn - Loot table, scriptable objects</li>
 <li>Possibly a storyline</li>
 
 ## Notes
