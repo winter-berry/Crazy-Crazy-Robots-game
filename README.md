@@ -1,5 +1,5 @@
-# Crazy Crazy Robots
-HOBBY PROJECT
+# Crazy Crazy Robots (2D game)
+This is a hobby project.
 
 ## Learning Journey
 <b> Goal: </b> <br>
